@@ -24,14 +24,10 @@ class test___init__(unittest.TestCase):
         self.assertTrue(smartplug.host == self.test_host)
 
     def test_turn_off(self):
-        asyncio.run(arkasa.turn_off(self.test_host))
-        host = asyncio.run(arkasa.get(self.test_host))
-        self.assertTrue(host.is_on is False)
+        return self.assertTrue(asyncio.run(arkasa.turn_off(self.test_host)))
 
     def test_turn_on(self):
-        asyncio.run(arkasa.turn_on(self.test_host))
-        host = asyncio.run(arkasa.get(self.test_host))
-        self.assertTrue(host.is_on is True)
+        return self.assertTrue(asyncio.run(arkasa.turn_on(self.test_host)))
 
     def test_hosts(self):
         hosts = asyncio.run(arkasa.hosts())

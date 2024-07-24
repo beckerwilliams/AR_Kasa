@@ -1,0 +1,26 @@
+{
+  "data": {
+    "schedule": {
+      "name": "GR-Humidifier_off",
+      "enabled": true,
+      "frequency": {
+        "repeating": {
+          "weekdays": [
+            "MONDAY",
+            "TUESDAY",
+            "WEDNESDAY",
+            "THURSDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "SUNDAY"
+          ],
+          "timeOfDay": "2000"
+        }
+      },
+      "state": {
+        "powered": false
+      },
+      "timeOption": "TIME"
+    }
+  }
+}
